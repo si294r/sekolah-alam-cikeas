@@ -3,25 +3,27 @@
 		"appearanceTools": true,
 		"color": {
 			"custom": true,
-			"defaultPalette": false,
+			"defaultPalette": true,
+			"gradients": [
+				{
+					"gradient": "linear-gradient(180deg, rgba(35,74,153,1) 0%, rgba(80,116,190,1) 100%)",
+					"name": "Dark Blue",
+					"slug": "dark-blue"
+				},
+				{
+					"gradient": "linear-gradient(180deg, rgba(230,225,255,1) 0%, rgba(237,239,254,1) 100%)",
+					"name": "Very Pale Blue",
+					"slug": "very-pale-blue"
+				}
+			],
 			"palette": [
-				{
-					"color": "#000000",
-					"name": "Black",
-					"slug": "black"
-				},
-				{
-					"color": "#FFFFFF",
-					"name": "White",
-					"slug": "white"
-				},
 				{
 					"color": "#EDEFFE",
 					"name": "Light Grayish Blue",
 					"slug": "light-grayish-blue"
 				},
 				{
-					"color": "#E0E4FF",
+					"color": "#E6E1FF",
 					"name": "Very Pale Blue",
 					"slug": "very-pale-blue"
 				},
@@ -37,34 +39,34 @@
 				},
 				{
 					"color": "#003135",
-					"name": "Dark Teal",
-					"slug": "dark-teal"
+					"name": "Sacramento State Green",
+					"slug": "sacramento-state-green"
 				},
 				{
 					"color": "#024950",
-					"name": "Medium Teal",
-					"slug": "medium-teal"
+					"name": "Midnight Green",
+					"slug": "midnight-green"
 				},
 				{
 					"color": "#964734",
-					"name": "Reddish Brown",
-					"slug": "reddish-brown"
+					"name": "Dark Moderate Red",
+					"slug": "dark-moderate-red"
 				},
 				{
 					"color": "#0FA4AF",
-					"name": "Light Blue Green",
-					"slug": "light-blue-green"
+					"name": "Dark Cyan",
+					"slug": "dark-cyan"
 				},
 				{
 					"color": "#AFDDE5",
-					"name": "Pale Blue",
-					"slug": "pale-blue"
+					"name": "Very Soft Cyan",
+					"slug": "very-soft-cyan"
 				}
 			]
 		},
 		"layout": {
-			"contentSize": "900px",
-			"wideSize": "100px"
+			"contentSize": "100%",
+			"wideSize": "100%"
 		},
 		"spacing": {
 			"units": [
@@ -82,6 +84,16 @@
 					"fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
 					"name": "System Font",
 					"slug": "system-font"
+				},
+				{
+					"fontFamily": "'Times New Roman', Times, serif",
+					"name": "Times New Roman Font",
+					"slug": "times-new-roman-font"
+				},
+				{
+					"fontFamily": "Arial, Helvetica, sans-serif",
+					"name": "Arial Font",
+					"slug": "arial-font"
 				}
 			]
 		},
