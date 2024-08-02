@@ -6,8 +6,8 @@
  * Inserter: no
  */
 ?>
-<!-- wp:group {"className":"has-arial-font-font-family","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group has-arial-font-font-family"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","verticalAlignment":"top"}} -->
+<!-- wp:group {"className":"has-helvetica-font-font-family","fontFamily":"helvetica-font","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group has-helvetica-font-font-family"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","verticalAlignment":"top"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"right":"var:preset|spacing|40"}},"layout":{"selfStretch":"fixed","flexSize":"40%"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--40)"><!-- wp:image {"width":"auto","height":"70px","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/logo-sac-864x265.png" alt="" style="width:auto;height:70px"/></figure>
@@ -27,24 +27,24 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","orientation":"vertical"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"dark-blue","fontFamily":"times-new-roman-font"} -->
-<p class="has-dark-blue-color has-text-color has-link-color has-times-new-roman-font-font-family" style="font-style:normal;font-weight:600">Main Menu</p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"dark-blue","fontFamily":"headland-one"} -->
+<p class="has-dark-blue-color has-text-color has-link-color has-headland-one-font-family" style="font-style:normal;font-weight:600">Main Menu</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:template-part {"slug":"footer-main-menu"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"position":{"type":""},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"dark-blue","fontFamily":"times-new-roman-font"} -->
-<p class="has-dark-blue-color has-text-color has-link-color has-times-new-roman-font-font-family" style="font-style:normal;font-weight:600">Link Lainnya</p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"dark-blue","fontFamily":"headland-one"} -->
+<p class="has-dark-blue-color has-text-color has-link-color has-headland-one-font-family" style="font-style:normal;font-weight:600">Link Lainnya</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:template-part {"slug":"footer-link-lainnya"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"},"position":{"type":""},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap","verticalAlignment":"top"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"dark-blue","fontFamily":"times-new-roman-font"} -->
-<p class="has-dark-blue-color has-text-color has-link-color has-times-new-roman-font-font-family" style="font-style:normal;font-weight:600">Follow Us</p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}},"typography":{"fontStyle":"normal","fontWeight":"600"}},"textColor":"dark-blue","fontFamily":"headland-one"} -->
+<p class="has-dark-blue-color has-text-color has-link-color has-headland-one-font-family" style="font-style:normal;font-weight:600">Follow Us</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"}}} -->

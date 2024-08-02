@@ -1,4 +1,13 @@
 {
+	"customTemplates": [
+		{
+			"name": "page-no-title",
+			"postTypes": [
+				"page"
+			],
+			"title": "Page No Title"
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -86,14 +95,24 @@
 					"slug": "system-font"
 				},
 				{
-					"fontFamily": "'Times New Roman', Times, serif",
-					"name": "Times New Roman Font",
-					"slug": "times-new-roman-font"
+					"fontFamily": "Helvetica",
+					"name": "Helvetica Font",
+					"slug": "helvetica-font"
 				},
 				{
-					"fontFamily": "Arial, Helvetica, sans-serif",
-					"name": "Arial Font",
-					"slug": "arial-font"
+					"fontFace": [
+						{
+							"fontFamily": "\"Headland One\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/yYLu0hHR2vKnp89Tk1TCq3Tx1flTeZ3mJA.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Headland One\", serif",
+					"name": "Headland One",
+					"slug": "headland-one"
 				}
 			]
 		},

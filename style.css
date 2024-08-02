@@ -14,6 +14,10 @@ Text Domain: sekolah-alam-cikeas
 Tags: 
 */
 
+a {
+    text-decoration: none;
+}
+
 .icon-whatsapp {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzE4NDU5NiIgY2xhc3M9ImJpIGJpLXdoYXRzYXBwIiB2aWV3Qm94PSIwIDAgMTYgMTYiPg0KICA8cGF0aCBkPSJNMTMuNjAxIDIuMzI2QTcuODUgNy44NSAwIDAgMCA3Ljk5NCAwQzMuNjI3IDAgLjA2OCAzLjU1OC4wNjQgNy45MjZjMCAxLjM5OS4zNjYgMi43NiAxLjA1NyAzLjk2NUwwIDE2bDQuMjA0LTEuMTAyYTcuOSA3LjkgMCAwIDAgMy43OS45NjVoLjAwNGM0LjM2OCAwIDcuOTI2LTMuNTU4IDcuOTMtNy45M0E3LjkgNy45IDAgMCAwIDEzLjYgMi4zMjZ6TTcuOTk0IDE0LjUyMWE2LjYgNi42IDAgMCAxLTMuMzU2LS45MmwtLjI0LS4xNDQtMi40OTQuNjU0LjY2Ni0yLjQzMy0uMTU2LS4yNTFhNi41NiA2LjU2IDAgMCAxLTEuMDA3LTMuNTA1YzAtMy42MjYgMi45NTctNi41ODQgNi41OTEtNi41ODRhNi41NiA2LjU2IDAgMCAxIDQuNjYgMS45MzEgNi41NiA2LjU2IDAgMCAxIDEuOTI4IDQuNjZjLS4wMDQgMy42MzktMi45NjEgNi41OTItNi41OTIgNi41OTJtMy42MTUtNC45MzRjLS4xOTctLjA5OS0xLjE3LS41NzgtMS4zNTMtLjY0Ni0uMTgyLS4wNjUtLjMxNS0uMDk5LS40NDUuMDk5LS4xMzMuMTk3LS41MTMuNjQ2LS42MjcuNzc1LS4xMTQuMTMzLS4yMzIuMTQ4LS40My4wNS0uMTk3LS4xLS44MzYtLjMwOC0xLjU5Mi0uOTg1LS41OS0uNTI1LS45ODUtMS4xNzUtMS4xMDMtMS4zNzItLjExNC0uMTk4LS4wMTEtLjMwNC4wODgtLjQwMy4wODctLjA4OC4xOTctLjIzMi4yOTYtLjM0Ni4xLS4xMTQuMTMzLS4xOTguMTk4LS4zMy4wNjUtLjEzNC4wMzQtLjI0OC0uMDE1LS4zNDctLjA1LS4wOTktLjQ0NS0xLjA3Ni0uNjEyLTEuNDctLjE2LS4zODktLjMyMy0uMzM1LS40NDUtLjM0LS4xMTQtLjAwNy0uMjQ3LS4wMDctLjM4LS4wMDdhLjczLjczIDAgMCAwLS41MjkuMjQ3Yy0uMTgyLjE5OC0uNjkxLjY3Ny0uNjkxIDEuNjU0cy43MSAxLjkxNi44MSAyLjA0OWMuMDk4LjEzMyAxLjM5NCAyLjEzMiAzLjM4MyAyLjk5Mi40Ny4yMDUuODQuMzI2IDEuMTI5LjQxOC40NzUuMTUyLjkwNC4xMjkgMS4yNDYuMDguMzgtLjA1OCAxLjE3MS0uNDggMS4zMzgtLjk0My4xNjQtLjQ2NC4xNjQtLjg2LjExNC0uOTQzLS4wNDktLjA4NC0uMTgyLS4xMzMtLjM4LS4yMzIiLz4NCjwvc3ZnPg==');
     background-repeat: no-repeat;
@@ -92,4 +96,46 @@ Tags:
 .follow-us.icon-twitter a {
     background-size: 11px;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI0VERUZGRSIgY2xhc3M9ImJpIGJpLXR3aXR0ZXIiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQogIDxwYXRoIGQ9Ik01LjAyNiAxNWM2LjAzOCAwIDkuMzQxLTUuMDAzIDkuMzQxLTkuMzM0cS4wMDItLjIxMS0uMDA2LS40MjJBNi43IDYuNyAwIDAgMCAxNiAzLjU0MmE2LjcgNi43IDAgMCAxLTEuODg5LjUxOCAzLjMgMy4zIDAgMCAwIDEuNDQ3LTEuODE3IDYuNSA2LjUgMCAwIDEtMi4wODcuNzkzQTMuMjg2IDMuMjg2IDAgMCAwIDcuODc1IDYuMDNhOS4zMiA5LjMyIDAgMCAxLTYuNzY3LTMuNDI5IDMuMjkgMy4yOSAwIDAgMCAxLjAxOCA0LjM4MkEzLjMgMy4zIDAgMCAxIC42NCA2LjU3NXYuMDQ1YTMuMjkgMy4yOSAwIDAgMCAyLjYzMiAzLjIxOCAzLjIgMy4yIDAgMCAxLS44NjUuMTE1IDMgMyAwIDAgMS0uNjE0LS4wNTcgMy4yOCAzLjI4IDAgMCAwIDMuMDY3IDIuMjc3QTYuNiA2LjYgMCAwIDEgLjc4IDEzLjU4YTYgNiAwIDAgMS0uNzgtLjA0NUE5LjM0IDkuMzQgMCAwIDAgNS4wMjYgMTUiLz4NCjwvc3ZnPg==');
+}
+
+.has-x-large-font-size.font-size-130 {
+    font-size: 130px !important;
+    height: 80px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-relative .position-left {
+    width: 9.5rem;
+    position: absolute;
+    z-index: 1;
+    top: -1.5rem;
+    left: -6rem;
+}
+
+.custom-top-container {
+    align-items: start;
+}
+
+.margin-top-1rem img {
+    margin-top: 1rem;
+}
+.margin-top-2rem img {
+    margin-top: 2rem;
+}
+.margin-top-3rem img {
+    margin-top: 3rem;
+}
+.margin-top-4rem img {
+    margin-top: 4rem;
+}
+
+.testimoni-container {
+    overflow-x: hidden;
+}
+
+.testimoni-item {
+    min-width: 280px;
 }
