@@ -13,6 +13,13 @@
 				"page"
 			],
 			"title": "Page With Join Us"
+		},
+		{
+			"name": "page-with-reviews",
+			"postTypes": [
+				"page"
+			],
+			"title": "Page With Reviews"
 		}
 	],
 	"settings": {
@@ -162,9 +169,52 @@
 					"fontFamily": "Poppins, sans-serif",
 					"name": "Poppins",
 					"slug": "poppins"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Manrope",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk7PFO_A87jxeN7B.woff2"
+							]
+						},
+						{
+							"fontFamily": "Manrope",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_A87jxeN7B.woff2"
+							]
+						}
+					],
+					"fontFamily": "Manrope, sans-serif",
+					"name": "Manrope",
+					"slug": "manrope"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"DM Sans\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhS2f3ZGMZpg.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"DM Sans\", sans-serif",
+					"name": "DM Sans",
+					"slug": "dm-sans"
 				}
 			],
 			"fontSizes": [
+				{
+					"name": "Large 60",
+					"size": "60px",
+					"slug": "large-60"
+				},
 				{
 					"name": "Large 42",
 					"size": "42px",
@@ -181,6 +231,11 @@
 					"slug": "large-38"
 				},
 				{
+					"name": "Large 30",
+					"size": "30px",
+					"slug": "large-30"
+				},
+				{
 					"name": "Medium 28",
 					"size": "28px",
 					"slug": "medium-28"
@@ -194,6 +249,11 @@
 					"name": "Medium 21",
 					"size": "21px",
 					"slug": "medium-21"
+				},
+				{
+					"name": "Medium 20",
+					"size": "20px",
+					"slug": "medium-20"
 				},
 				{
 					"name": "Small 18",
@@ -220,6 +280,15 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"blocks": {
+			"core/separator": {
+				"border": {
+					"top": {
+						"width": "1px"
+					}
+				}
+			}
+		},
 		"color": {
 			"background": "var(--wp--preset--color--light-grayish-blue)"
 		},
