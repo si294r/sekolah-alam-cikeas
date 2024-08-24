@@ -9,3 +9,29 @@ if ( ! function_exists( 'sekolahalamcikeas_scripts' ) ) :
 endif;
 
 add_action( 'wp_enqueue_scripts', 'sekolahalamcikeas_scripts' );
+
+
+if ( ! function_exists( 'sekolahalamcikeas_register_block_pattern_category' ) ) :
+	function sekolahalamcikeas_register_block_pattern_category() {
+		register_block_pattern_category( 'custom-pattern',  array( 'label' => 'Custom Pattern' ));
+	}
+endif;
+  
+add_action( 'init', 'sekolahalamcikeas_register_block_pattern_category' );
+
+
+function sekolahalamcikeas_get_reviews() {
+    global $wpdb;
+    // error_log( var_export($wpdb, true) );
+    $results = $wpdb->get_results(
+        $wpdb->prepare(
+            'select review_id, nama, tanggal, teks, flag_show 
+            from reviews 
+            where flag_show = 1
+            order by tanggal desc
+            '
+        ),
+        ARRAY_A
+    );
+    return $results;
+}

@@ -16,10 +16,31 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
 
     if (document.querySelector('.testimoni-item') != null) {
-        document.querySelector('.testimoni-item').parentElement.addEventListener("wheel", function(e) {
+        document.querySelector('.testimoni-item').parentElement.addEventListener("wheel", function(e) {            
+            // scroll horizontal
+            var oldScroll = this.scrollLeft;            
+            this.scrollLeft += e.deltaY;
+            if (oldScroll != this.scrollLeft) {
+                e.preventDefault(); // stop scroll screen
+            }
+        });
+    }
+
+    if (document.querySelector('.testimoni-prev a') != null) {
+        document.querySelector('.testimoni-prev a').addEventListener("click", function(e) {
             e.preventDefault();
             // scroll horizontal
-            this.scrollLeft += e.deltaY;
+            //this.scrollLeft += e.deltaY;
+            document.querySelector('.testimoni-item').parentElement.scrollLeft += -100;
+        });
+    }
+
+    if (document.querySelector('.testimoni-next a') != null) {
+        document.querySelector('.testimoni-next a').addEventListener("click", function(e) {
+            e.preventDefault();
+            // scroll horizontal
+            //this.scrollLeft += e.deltaY;
+            document.querySelector('.testimoni-item').parentElement.scrollLeft += 100;
         });
     }
 
@@ -31,7 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll('p[class*=blog-link]').forEach( element => {
         element.addEventListener("click", blogLinkClick);
     });
-    document.querySelector('p.blog-link-all').style.fontWeight = 'bold';
+    if (document.querySelector('p.blog-link-all') != null) {
+        document.querySelector('p.blog-link-all').style.fontWeight = 'bold';
+    }
 
 });
 
