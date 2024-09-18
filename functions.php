@@ -24,13 +24,11 @@ function sekolahalamcikeas_get_reviews() {
     global $wpdb;
     // error_log( var_export($wpdb, true) );
     $results = $wpdb->get_results(
-        $wpdb->prepare(
-            'select review_id, nama, tanggal, teks, flag_show 
-            from reviews 
-            where flag_show = 1
-            order by tanggal desc
-            '
-        ),
+        'select review_id, nama, tanggal, teks, flag_show 
+        from reviews 
+        where flag_show = 1
+        order by tanggal desc'
+        ,
         ARRAY_A
     );
     return $results;

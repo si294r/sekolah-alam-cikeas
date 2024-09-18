@@ -146,6 +146,18 @@ a {
     z-index: -1;
 }
 
+.quotes-container .wp-block-column .wp-block-image {
+    height: 100%;
+}
+
+.quotes-container .wp-block-column .wp-block-image img {
+    height: 100%;
+}
+
+.quotes-container .wp-block-column div.wp-block-group {
+    height: 100%;
+}
+
 .reviews-container {
     margin-block-start: 0;
 }
@@ -338,4 +350,37 @@ a {
     min-width: 320px;
     max-width: 320px;
     align-self: stretch;
+}
+
+@media (max-width: 782px) {
+	/* mobile */
+    .block-group-flex > div {
+        min-width: 95%;
+    }
+    .background-home div.wp-block-group > * {
+        max-width: 95%;
+    }
+    .background-home div.wp-block-group .has-large-60-font-size {
+        font-size: 50px !important;
+    }
+    .background-join-us-overlay div.wp-block-group div.wp-block-columns {
+        max-width: 80%;
+        gap: 0px;
+    }
+    .background-testimoni div.wp-block-group div.wp-block-group {
+        margin-top: 10px !important;
+    }
+    .background-testimoni div.wp-block-group div.wp-block-group div.wp-block-buttons {
+        justify-content: center;
+    }
+    footer div.wp-block-group div.wp-block-group-is-layout-flex div.wp-block-group {
+        min-width: 95%;
+    }
+    footer div.wp-block-group div.wp-block-group-is-layout-flow {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 782px) {
+	/* desktop */
 }
