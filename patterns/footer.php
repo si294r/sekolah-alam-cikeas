@@ -83,7 +83,7 @@
 <!-- /wp:separator -->
 
 <!-- wp:paragraph {"align":"left","fontSize":"small-12"} -->
-<p class="has-text-align-left has-small-12-font-size">Copyright © 2024 Sekolah Alam Cikeas.</p>
+<p class="has-text-align-left has-small-12-font-size">Copyright © <?php echo gmdate('Y'); ?> Sekolah Alam Cikeas.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
