@@ -55,15 +55,15 @@
 
 <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|20"}}} -->
 <div class="wp-block-buttons" style="margin-top:0;margin-bottom:0"><!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-facebook","style":{"border":{"radius":"50%"}}} -->
-<div class="wp-block-button is-style-fill follow-us icon-facebook"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://www.facebook.com/" style="border-radius:50%" target="_blank" rel="noreferrer noopener">fb</a></div>
+<div class="wp-block-button is-style-fill follow-us icon-facebook"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://www.facebook.com/alam.cikeas" style="border-radius:50%" target="_blank" rel="noreferrer noopener">fb</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-instagram","style":{"border":{"radius":"50%"}}} -->
-<div class="wp-block-button is-style-fill follow-us icon-instagram"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://www.instagram.com/" style="border-radius:50%" target="_blank" rel="noreferrer noopener">insta</a></div>
+<div class="wp-block-button is-style-fill follow-us icon-instagram"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://www.instagram.com/smasekolahalamcikeas/" style="border-radius:50%" target="_blank" rel="noreferrer noopener">insta</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-youtube","style":{"border":{"radius":"50%"}}} -->
-<div class="wp-block-button is-style-fill follow-us icon-youtube"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://www.youtube.com/" style="border-radius:50%" target="_blank" rel="noreferrer noopener">yt</a></div>
+<div class="wp-block-button is-style-fill follow-us icon-youtube"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://www.youtube.com/@sekolahalamcikeass" style="border-radius:50%" target="_blank" rel="noreferrer noopener">yt</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-linkedin","style":{"border":{"radius":"50%"}}} -->
@@ -71,7 +71,7 @@
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-twitter","style":{"border":{"radius":"50%"}}} -->
-<div class="wp-block-button is-style-fill follow-us icon-twitter"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://x.com/" style="border-radius:50%" target="_blank" rel="noreferrer noopener">tw</a></div>
+<div class="wp-block-button is-style-fill follow-us icon-twitter"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://x.com/sacikeas" style="border-radius:50%" target="_blank" rel="noreferrer noopener">tw</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
