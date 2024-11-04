@@ -67,7 +67,7 @@
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-linkedin","style":{"border":{"radius":"50%"}}} -->
-<div class="wp-block-button is-style-fill follow-us icon-linkedin"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://id.linkedin.com/" style="border-radius:50%" target="_blank" rel="noreferrer noopener">in</a></div>
+<div class="wp-block-button is-style-fill follow-us icon-linkedin"><a class="wp-block-button__link has-dark-blue-background-color has-background wp-element-button" href="https://id.linkedin.com/company/sekolah-alam-cikeas" style="border-radius:50%" target="_blank" rel="noreferrer noopener">in</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"backgroundColor":"dark-blue","className":"is-style-fill follow-us icon-twitter","style":{"border":{"radius":"50%"}}} -->
