@@ -7,7 +7,7 @@ Description: Theme for Sekolah Alam Cikeas
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 5.7
-Version: 1.0-20241017
+Version: 1.0-20241104
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sekolah-alam-cikeas
@@ -415,11 +415,44 @@ header .wp-block-navigation-link > a.active::after {
     .blog-link-sma {
         font-size: var(--wp--preset--font-size--small-16);
     }
+    .profile-horizontal {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 782px) {
 	/* desktop */
     ul.wp-block-navigation {
         margin-right: 50px;
+    }
+    .profile-horizontal {
+        display: flex;
+    }
+    .profile-horizontal > div {
+        width: 50%;
+        gap: 0;
+        margin-block-start: 0;
+        position: relative;
+        height: 320px;
+    }
+    .profile-horizontal.profile-kunci > div {
+        height: 480px;
+    }
+    .profile-horizontal > div > div:nth-child(1) {
+        z-index: 1;
+        position: absolute;
+        height: 192px;
+        width: 192px;
+    }
+    .profile-horizontal > div > div:nth-child(2) {
+        z-index: 0;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 136px;
+        margin-right: 30px;
+        height: 100%;
+    }
+    .profile-horizontal > div > div:nth-child(2) > div {
+        padding-left: 75px !important;
     }
 }
