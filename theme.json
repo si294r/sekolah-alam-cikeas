@@ -20,6 +20,13 @@
 				"page"
 			],
 			"title": "Page With Reviews"
+		},
+		{
+			"name": "elementor_header_footer",
+			"postTypes": [
+				"post"
+			],
+			"title": "Elementor Full Width"
 		}
 	],
 	"settings": {
