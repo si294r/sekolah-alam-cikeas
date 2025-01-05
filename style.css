@@ -7,7 +7,7 @@ Description: Theme for Sekolah Alam Cikeas
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 5.7
-Version: 1.0-20250105
+Version: 1.0-20250105-1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sekolah-alam-cikeas
@@ -31,10 +31,6 @@ header .wp-block-navigation-submenu > a.active {
     position: relative;
 }
 
-header .wp-block-navigation-submenu .wp-block-navigation-link > a.active {
-    justify-content: left;
-}
-
 header .wp-block-navigation-link > a.active > span,
 header .wp-block-navigation-submenu > a.active > span {
     display: block;
@@ -47,10 +43,6 @@ header .wp-block-navigation-submenu > a.active::after {
     font-family: sans-serif;
     position: absolute;
     top: 13px;
-}
-
-header  .wp-block-navigation-submenu .wp-block-navigation-link > a.active::after {
-    display: none;
 }
 
 .background-home {
@@ -392,6 +384,15 @@ header  .wp-block-navigation-submenu .wp-block-navigation-link > a.active::after
     ul.wp-block-navigation {
         margin-bottom: 50px;
     }
+    ul.wp-block-navigation-submenu {
+        padding-top: 10px !important;
+    }
+    ul.wp-block-navigation-submenu > li.wp-block-navigation-link {
+        margin-top: 8px;
+    }
+    ul.wp-block-navigation-submenu > li.wp-block-navigation-link > a.active {
+        margin-bottom: 8px !important;
+    }
     .block-group-flex > div {
         min-width: 95%;
     }
@@ -439,6 +440,15 @@ header  .wp-block-navigation-submenu .wp-block-navigation-link > a.active::after
 	/* desktop */
     ul.wp-block-navigation {
         margin-right: 50px;
+    }
+    header .wp-block-navigation-submenu {
+        padding-bottom: 10px;
+    }
+    header .wp-block-navigation-submenu .wp-block-navigation-link > a.active {
+        flex-grow: 0 !important;
+    }
+    header .wp-block-navigation-submenu .wp-block-navigation-link > a.active:after {
+        top: 18px;
     }
     .profile-horizontal {
         display: flex;
