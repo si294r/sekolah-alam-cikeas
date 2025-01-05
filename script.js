@@ -1,7 +1,15 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    document.querySelectorAll('header .wp-block-navigation-link a').forEach( element => {
+    document.querySelectorAll('header .wp-block-navigation-link > a').forEach( element => {
+        console.log(element.href + ' = ' + location.href);
+        let menu_href = element.href.endsWith('/') ? element.href : element.href + '/';
+        let loc_href = location.href.endsWith('/') ? location.href : location.href + '/';
+        if (menu_href.toLowerCase() == loc_href.toLowerCase()) {
+            element.classList.add('active');
+        }
+    });
+    document.querySelectorAll('header .wp-block-navigation-submenu > a').forEach( element => {
         console.log(element.href + ' = ' + location.href);
         let menu_href = element.href.endsWith('/') ? element.href : element.href + '/';
         let loc_href = location.href.endsWith('/') ? location.href : location.href + '/';
