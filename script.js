@@ -91,3 +91,40 @@ function blogLinkClick(e) {
     });
     document.querySelector('.' + className).style.display = 'block';
 }
+
+function carouselSlide(container) {
+    var inner = document.querySelector(container).querySelector('.carousel-inner');
+    var active = inner.querySelector('.carousel-item.active');
+    var next = active.nextElementSibling;
+    if (next == null) {
+        next = inner.firstElementChild;    
+    }
+    // animate slide next
+    next.classList.add('carousel-item-next');
+    setTimeout(() => {
+        active.classList.add('carousel-item-start');
+        next.classList.add('carousel-item-start');
+    }, 1);
+    
+    setTimeout(() => {
+        // swith active
+        next.classList.add('active');
+        active.classList.remove('active');
+        // clear class animation
+        active.classList.remove('carousel-item-start');
+        next.classList.remove('carousel-item-next', 'carousel-item-start');
+    }, 1500);
+}
+
+function facilityAutoSlide() {
+    if (document.querySelector('.facility') != null) {
+        setInterval(function () 
+        { 
+            carouselSlide('.facility') 
+        }, 5000); // slide interval 5 seconds
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    facilityAutoSlide();
+});
