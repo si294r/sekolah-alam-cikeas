@@ -116,6 +116,68 @@ function carouselSlide(container) {
     }, 1500);
 }
 
+function carouselSlideNext(containerElement) {
+    var inner = containerElement.querySelector('.carousel-inner');
+    var active = inner.querySelector('.carousel-item.active');
+    var next = active.nextElementSibling;
+    if (next == null) {
+        next = inner.firstElementChild;    
+    }
+    // animate slide next
+    next.classList.add('carousel-item-next');
+    setTimeout(() => {
+        active.classList.add('carousel-item-start');
+        next.classList.add('carousel-item-start');
+    }, 1);
+    
+    // update indicator
+    setTimeout(() => {
+        containerElement.querySelector('.carousel-indicators > button.active').classList.remove('active');
+        var no = next.getAttribute('carousel-item-no');
+        containerElement.querySelector('.carousel-indicators > button[carousel-indicator-no="'+no+'"]').classList.add('active');
+    }, 100);
+
+    setTimeout(() => {
+        // swith active
+        next.classList.add('active');
+        active.classList.remove('active');
+        // clear class animation
+        active.classList.remove('carousel-item-start');
+        next.classList.remove('carousel-item-next', 'carousel-item-start');
+    }, 1500);
+}
+
+function carouselSlidePrev(containerElement) {
+    var inner = containerElement.querySelector('.carousel-inner');
+    var active = inner.querySelector('.carousel-item.active');
+    var prev = active.previousElementSibling;
+    if (prev == null) {
+        prev = inner.lastElementChild;    
+    }
+    // animate slide prev
+    prev.classList.add('carousel-item-prev');
+    setTimeout(() => {
+        active.classList.add('carousel-item-end');
+        prev.classList.add('carousel-item-end');
+    }, 1);
+    
+    // update indicator
+    setTimeout(() => {
+        containerElement.querySelector('.carousel-indicators > button.active').classList.remove('active');
+        var no = prev.getAttribute('carousel-item-no');
+        containerElement.querySelector('.carousel-indicators > button[carousel-indicator-no="'+no+'"]').classList.add('active');
+    }, 100);
+
+    setTimeout(() => {
+        // swith active
+        prev.classList.add('active');
+        active.classList.remove('active');
+        // clear class animation
+        active.classList.remove('carousel-item-end');
+        prev.classList.remove('carousel-item-prev', 'carousel-item-end');
+    }, 1500);
+}
+
 function facilityAutoSlide() {
     if (document.querySelector('.facility') != null) {
         setInterval(function () 
@@ -125,6 +187,45 @@ function facilityAutoSlide() {
     }
 }
 
+function carouselAutoSlide() {
+    document.querySelectorAll('.carousel-inner.autoslide').forEach( element => {
+        setInterval(function () 
+        { 
+            if (element.closest('.carousel') != null) {
+                carouselSlideNext(element.closest('.carousel'));
+            } 
+        }, 5000); // slide interval 5 seconds
+    });
+}
+
+function addCarouselIndicator() {
+    document.querySelectorAll('.carousel').forEach( element => {
+        var el = document.createElement('div');
+        el.classList.add('carousel-indicators');
+        el.innerHTML = '';
+        var inner = element.querySelector('.carousel-inner');
+        var count = inner.children.length;
+        for (var i=0; i<count; i++) {
+            inner.children.item(i).setAttribute('carousel-item-no', i);
+            let active = i == 0 ? 'active' : ''; 
+            el.innerHTML += `
+            <button type="button" data-bs-target="" class="` + active + `" carousel-indicator-no="` + i + `"></button>
+            `;
+        }
+        element.prepend(el);
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     facilityAutoSlide();
+    carouselAutoSlide();
+    addCarouselIndicator();
 });
+
+function carouselSlidePrevClick(obj) {
+    carouselSlidePrev(obj.closest('.carousel'));
+}
+
+function carouselSlideNextClick(obj) {
+    carouselSlideNext(obj.closest('.carousel'));    
+}
