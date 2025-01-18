@@ -2,7 +2,6 @@
 /**
  * Title: footer
  * Slug: sekolah-alam-cikeas/footer
- * Categories: hidden
  * Inserter: no
  */
 ?>
@@ -15,8 +14,22 @@
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","padding":{"right":"var:preset|spacing|40"}},"layout":{"selfStretch":"fixed","flexSize":"40%"}},"layout":{"type":"flex","orientation":"vertical"}} -->
 <div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--40)"><!-- wp:group {"style":{"spacing":{"margin":{"top":"-10px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="margin-top:-10px"><!-- wp:image {"width":"auto","height":"70px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/logo-sac-864x265.png" alt="" style="width:auto;height:70px"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-sac-864x265.png" alt="" style="width:auto;height:70px"/></figure>
 <!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":2}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"padding":{"left":"15px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-left:15px"><!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-iga-2016.png" alt="" style="width:auto;height:60px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","contentSize":""}} -->
+<div class="wp-block-group"><!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-iga-2014.png" alt="" style="width:auto;height:60px"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"spacing":{"margin":{"top":"8px"}}},"fontSize":"small-14"} -->
