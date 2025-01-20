@@ -18,22 +18,30 @@
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"grid","minimumColumnWidth":null,"columnCount":2}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"padding":{"left":"15px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-left:15px"><!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-iga-2016.png" alt="" style="width:auto;height:60px"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:group -->
+<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"padding":{"left":"15px"},"blockGap":"10px"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+<div class="wp-block-group" style="padding-left:15px"><!-- wp:image {"width":"60px","height":"60px","scale":"cover","sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
+<figure class="wp-block-image size-large is-resized is-style-default"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-iga-2016.png" alt="" style="object-fit:cover;width:60px;height:60px"/></figure>
+<!-- /wp:image -->
 
-<!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained","justifyContent":"left","contentSize":""}} -->
-<div class="wp-block-group"><!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
+<!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-iga-2014.png" alt="" style="width:auto;height:60px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-adiwiyata.png" alt="" style="width:auto;height:60px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"width":"auto","height":"60px","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/logo-iso-9001.png" alt="" style="width:auto;height:60px"/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.7"},"spacing":{"margin":{"top":"8px"}}},"fontSize":"small-14"} -->
-<p class="has-small-14-font-size" style="margin-top:8px;line-height:1.7">Sekolah Alam adalah sekolah formal yang konsep pendidikan, lingkungan belajar dan metode pembelajarannya menggunakan alam.</p>
+<p class="has-small-14-font-size" style="margin-top:8px;line-height:1.7">Sekolah Alam adalah sekolah formal yang konsep pendidikan, lingkungan belajar dan metode pembelajarannya mengoptimalkan anugerah alam.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"icon-geo","style":{"typography":{"lineHeight":"1.7","fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|very-dark-grayish-red"}}},"spacing":{"padding":{"top":"5px"}}},"textColor":"very-dark-grayish-red","fontSize":"small-14"} -->
+<p class="icon-geo has-very-dark-grayish-red-color has-text-color has-link-color has-small-14-font-size" style="padding-top:5px;font-style:normal;font-weight:500;line-height:1.7">Perumahan Puri Cikeas Indah, Gunung Putri, Bogor.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"icon-phone","style":{"typography":{"fontStyle":"normal","fontWeight":"500","lineHeight":"1.7"},"spacing":{"margin":{"top":"5px"}},"elements":{"link":{"color":{"text":"var:preset|color|very-dark-grayish-red"}}}},"textColor":"very-dark-grayish-red","fontSize":"small-14"} -->
