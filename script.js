@@ -125,10 +125,14 @@ function carouselSlideNext(containerElement) {
     }
     // animate slide next
     next.classList.add('carousel-item-next');
-    setTimeout(() => {
-        active.classList.add('carousel-item-start');
-        next.classList.add('carousel-item-start');
-    }, 1);
+
+    // reflow - Trick to restart an element's animation
+    // see bootstrap5.3/js/util/index.js line 167-177 
+    next.offsetHeight // eslint-disable-line no-unused-expressions
+    // end of reflow
+
+    active.classList.add('carousel-item-start');
+    next.classList.add('carousel-item-start');
     
     // update indicator
     setTimeout(() => {
